@@ -5,21 +5,21 @@
 class Ocxtui < Formula
   desc "A terminal UI to inspect and edit OpenCode agent profiles."
   homepage "https://github.com/vherrera1991/ocxtui"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vherrera1991/ocxtui/releases/download/v0.3.0/ocxtui_0.3.0_darwin_amd64.tar.gz"
-      sha256 "7b3a4719aaf10cef5fc9760b65e1b003993be5c13eb6037d52b5746a80d7e723"
+      url "https://github.com/vherrera1991/ocxtui/releases/download/v0.3.1/ocxtui_0.3.1_darwin_amd64.tar.gz"
+      sha256 "21ca53c019ce0db89a7336eab90687ee3d7513b5ac9c0fc7cd8be593d366a334"
 
       define_method(:install) do
         bin.install "ocxtui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vherrera1991/ocxtui/releases/download/v0.3.0/ocxtui_0.3.0_darwin_arm64.tar.gz"
-      sha256 "338b21822b66b0058ff3869149b3cf8ce9d96f20ff341adfcc70d80e991fec28"
+      url "https://github.com/vherrera1991/ocxtui/releases/download/v0.3.1/ocxtui_0.3.1_darwin_arm64.tar.gz"
+      sha256 "9951aeae086f455f13a8a067052a386c94b27ebd9554df92eb8e96ee10eb7483"
 
       define_method(:install) do
         bin.install "ocxtui"
@@ -29,15 +29,15 @@ class Ocxtui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vherrera1991/ocxtui/releases/download/v0.3.0/ocxtui_0.3.0_linux_amd64.tar.gz"
-      sha256 "654708ae8dee58cd48937618bf0e39340e7d9a8245134994b2bb4c0e581305cc"
+      url "https://github.com/vherrera1991/ocxtui/releases/download/v0.3.1/ocxtui_0.3.1_linux_amd64.tar.gz"
+      sha256 "9efc5650c8c6fe5838395a0cba8be16f078f312703dc513fecfac5edd6450c4f"
       define_method(:install) do
         bin.install "ocxtui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vherrera1991/ocxtui/releases/download/v0.3.0/ocxtui_0.3.0_linux_arm64.tar.gz"
-      sha256 "c85a43a89c0bf1437dbc7b4de7d468a11cb2c5ce457cba0d5bf6afae9eb38fef"
+      url "https://github.com/vherrera1991/ocxtui/releases/download/v0.3.1/ocxtui_0.3.1_linux_arm64.tar.gz"
+      sha256 "536f1ab795a00fb1361d1d487b37e67cb204246672fabf44dbb62e050241977c"
       define_method(:install) do
         bin.install "ocxtui"
       end
